@@ -1,0 +1,105 @@
+import React, {useContext,useState} from 'react'
+import { stateContext } from '../context/statecontext';
+import './productdetails.css'
+import Footer from '../Footer/footer';
+import Faq from './Faq';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+
+const ProductDetails = () => {
+    const {state:{get,teams,cart},dispatch}=useContext(stateContext)
+    console.log("stateproduct",get)
+
+    const extracard = () => {
+      let a = {}
+      for(let i=0; i<get.length ;i++){
+           a[get[i].id] = 1;
+      }
+      return a;
+  }
+  console.log(extracard());
+  const [func,setFunc]=useState(extracard())
+  console.log(func);
+  const [qty, setQty] = useState(1);
+  console.log(qty);
+  const decrement = (id) =>{
+     
+      if(func[id] > 0){
+        setFunc(prevcount => ({...prevcount,[id] : prevcount[id] - 1}))
+      }
+ 
+    }
+
+    const increment = (id,stock) =>{
+      if(func[id] < stock){
+        setFunc(prevcount => ({...prevcount, [id] : prevcount[id] + 1}))
+      }
+    }
+
+  return (
+    <>
+    <div class="productsec">
+          <div className="containers">
+          {[get.obj]?.map((value,index)=>{
+                      return <>
+            <div className='rowproduct col-xs-12 col-md-12' key={index}>
+                    <div className='col col-xs-5 col-md-5'>
+                        <div class="productcontent">
+                      <img src={value?.img}/>
+                      </div>
+                    </div>
+                    <div className='col col-xs-6 col-md-6'>
+                      <div className='productcontent2'>
+                      <h2 className='pad'>{value?.heading}</h2>
+                       <h1>{value.details}</h1>
+                       <div>
+                                <h6 className='h6'>MRP: <span><del>{value.strike}</del></span> <span>{value.rupees}</span></h6>
+                             </div>
+                             <div className='cardflex'>
+                                <div className='cardicon'>
+                                    <LocalShippingIcon/>
+                                </div>
+                                    <div className='product-card'>
+                                     <h6>{value.delievery}</h6>
+                                    </div>
+                                </div>
+                       
+                       <div className='product-content d-xs-none d-md-none'>
+  
+                        <div>
+                                 <h6 className='q'>QUANTITY:</h6>   
+                                <button className='btn' onClick={()=>decrement(value.id)}>-</button>
+                                <input class="inputcard" value={value.qty} size={5}/>
+                                 <button className='btn' onClick={()=>increment(value.id,value.stock)}>+</button>
+                          </div>
+                        <div>
+                        {cart.some(e => e.id === value.id) ? (
+                                             <button className='footicons1' onClick={()=>dispatch({type:"REMOVE",payload:value})} style={{backgroundColor:'red',color:'white'}}>REMOVE CART</button>
+                                        ) : (
+                                            <button className='footicons1' onClick={()=>dispatch({type:"CART",payload:value})} >ADD CART</button>
+                                        )}
+                        </div>
+                        <div>
+                          <button className='footicons'>SAVE</button>
+                        </div>
+                       </div>
+                                      
+                       </div>
+                       <div>
+                      </div>
+                      </div>
+                     
+               
+               
+            </div>
+             </>
+            })}
+              <Faq/>
+          </div>    
+        
+    </div>
+    <Footer/>
+    </>
+  )
+}
+
+export default ProductDetails

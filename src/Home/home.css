@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.teamcontainer{
+    width:80%;
+    margin:0 auto;
+}
+.teamcontainer h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: #0c5b47;
+    text-align: center;
+    padding:30px;
+}
+.teamrow{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.teamcol{
+    width:25%;
+    position:relative;
+    transition: 0.3s;
+    padding:10px 10px;
+}
+
+.position{
+    position: relative;
+}
+.css-o69gx8-MuiCardMedia-root {
+    width:50% !important;
+}
+
+.headimage img{
+   width:100%;
+   padding-top: 20px;
+}
+.image-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cardflex{
+    display: flex;
+    padding: 8px 0;
+}
+.cardicon{
+    color:gray;
+    padding-right:10px;
+}
+.cardfoot{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+
+}
+.footicon{
+    background: #fee67c;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    padding:10px;
+    margin-top:3px;
+    transition: 0.5s;
+}
+input{
+    text-align: center;
+    border: none;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding:0 !important;
+    height:0 !important;
+}
+.offer{
+    position: absolute;
+    top:0;
+    text-align: center;
+    background-color: #fff;
+    color:red;
+    box-shadow: 0 0 10px #ccc;
+    padding: 5px;
+    width: 92%;
+    margin: 10px 10px;
+}
+.css-46bh2p-MuiCardContent-root {
+    padding: 11px 16px;
+}
+.css-o69gx8-MuiCardMedia-root {
+    margin-top: 30px !important;
+}
+.offericon{
+    font-size: 14px !important;
+}
+.shadows{
+    background-color: #cccccc42;
+    padding: 6px;
+}
+
+@media (max-width:576px){
+    .col-xs-1{
+        flex:0 0 auto;
+        width:8.33%;
+     }
+      .col-xs-2{
+          flex:0 0 auto;
+         width:16.66%;
+     }
+      .col-xs-3{
+          flex:0 0 auto;
+         width:25%;
+     }
+      .col-xs-4{
+          flex:0 0 auto;
+         width:33.33%;
+     }
+      .col-xs-5{
+          flex:0 0 auto;
+         width:41.66%;
+     }
+      .col-xs-6{
+          flex:0 0 auto;
+         width:50%;
+     }
+      .col-xs-7{
+          flex:0 0 auto;
+         width:58.33%;
+     }
+      .col-xs-8{
+          flex:0 0 auto;
+         width:66.66%;
+     }
+      .col-xs-9{
+          flex:0 0 auto;
+         width:75%;
+     }
+      .col-xs-10{
+          flex:0 0 auto;
+         width:83.33%;
+     }
+      .col-xs-11{
+          flex:0 0 auto;
+         width:91.66%;
+     }
+      .col-xs-12{
+          flex:0 0 auto;
+         width:100%;
+     }
+     .d-xs-none{
+          display:none !important;
+      }	
+      .teamcontainer h1 {
+        font-weight: 400;
+        font-size: 30px;
+        color: #0c5b47;
+        text-align: center;
+        padding: 20px;
+    }
+    
+}
+
+@media (min-width:1200px){
+	.container{
+		width:1170px;
+	}
+	 .col-lg-1{
+		 flex:0 0 auto;
+	   width:8.33%;
+   }
+    .col-lg-2{
+		flex:0 0 auto;
+	   width:16.66%;
+   }
+    .col-lg-3{
+		flex:0 0 auto;
+	   width:25%;
+   }
+    .col-lg-4{
+		flex:0 0 auto;
+	   width:33.33%;
+   }
+    .col-lg-5{
+		flex:0 0 auto;
+	   width:41.66%;
+   }
+    .col-lg-6{
+		flex:0 0 auto;
+	   width:50%;
+   }
+    .col-lg-7{
+		flex:0 0 auto;
+	   width:58.33%;
+   }
+    .col-lg-8{
+		flex:0 0 auto;
+	   width:66.66%;
+   }
+    .col-lg-9{
+		flex:0 0 auto;
+	   width:75%;
+   }
+    .col-lg-10{
+		flex:0 0 auto;
+	   width:83.33%;
+   }
+    .col-lg-11{
+		flex:0 0 auto;
+	   width:91.66%;
+   }
+    .col-lg-12{
+		flex:0 0 auto;
+	   width:100%;
+   }
+   .d-lg-block{
+	   display:block !important;
+   }
+   .d-lg-none{
+	   display:none !important;
+   }
+}

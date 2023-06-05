@@ -1,0 +1,291 @@
+
+    .containers{
+        width:80%;
+        margin: 0 auto;
+        font-family: sans-serif;
+    }
+    .rowproduct{
+        display: flex;
+        margin:30px 0;
+    }
+   .productsection .col{
+        width:50%;
+    }
+    .productcontent img{
+        width:80% !important;
+    }
+    /* .productcontent2{
+        padding:0 40px ;
+    } */
+    .productcontent2 h1{
+        color:blue;
+        padding: 10px  0;
+        font-size: 40px;
+    }
+    .productcontent2 p{
+        font-size: 20px;
+        color:gray;
+
+    }
+    .productcontent2 h2 span{
+        color:red;
+    }
+    .pad{
+        padding: 10px 0;
+    }
+    .product-content{
+        display: flex;
+        padding-top: 10px;
+    }
+    .footicons{
+        border:1px solid #999;
+        border-radius: 5px;
+        cursor:pointer;
+        padding:8px 20px;
+        margin:5px 20px;
+    }
+    .footicons1{
+        background: #fee67c;
+        border: none;
+        border-radius: 5px;
+        cursor:pointer;
+        padding:10px;
+        margin:5px 30px;
+
+    }
+    .product-card{
+        padding-top:5px;
+        font-size: 24px;
+    }
+    .productcontent2 .h6{
+        font-size: 20px;
+    }
+    .btn{
+        text-decoration:none;
+        color:white;
+        background-color:lightgreen;
+        padding:0px 8px ;
+        text-align:center;
+        border:none;
+        border-radius:6px;
+        font-size:20px;
+        cursor: pointer;
+    }
+    .q{
+        font-size: 16px;
+    }
+
+    @media (max-width:576px){
+        .col-xs-1{
+            flex:0 0 auto;
+            width:8.33%;
+         }
+          .col-xs-2{
+              flex:0 0 auto;
+             width:16.66%;
+         }
+          .col-xs-3{
+              flex:0 0 auto;
+             width:25%;
+         }
+          .col-xs-4{
+              flex:0 0 auto;
+             width:33.33%;
+         }
+          .col-xs-5{
+              flex:0 0 auto;
+             width:41.66%;
+         }
+          .col-xs-6{
+              flex:0 0 auto;
+             width:50%;
+         }
+          .col-xs-7{
+              flex:0 0 auto;
+             width:58.33%;
+         }
+          .col-xs-8{
+              flex:0 0 auto;
+             width:66.66%;
+         }
+          .col-xs-9{
+              flex:0 0 auto;
+             width:75%;
+         }
+          .col-xs-10{
+              flex:0 0 auto;
+             width:83.33%;
+         }
+          .col-xs-11{
+              flex:0 0 auto;
+             width:91.66%;
+         }
+          .col-xs-12{
+              flex:0 0 auto;
+             width:100%;
+         }
+         .d-xs-none{
+              display:none !important;
+          }	
+          .d-xs-block{
+            display: block !important;
+          }
+          .pad{
+            padding: 10px 0;
+            color:grey !important;
+        }
+        .productcontent img{
+            width:90% !important;
+        }
+        .productcontent2 h1{
+            color:blue;
+            padding: 10px  0;
+            font-size: 20px;
+        }  
+        .productcontent2 .h6 {
+            font-size: 15px;
+        }
+        .product-card{
+            font-size: 17px;
+        }
+        .cardflex{
+            padding: 25px 0;
+        }
+       
+         
+    }
+    
+    @media (min-width:768px){
+        .col-md-1{
+            flex:0 0 auto;
+            width:8.33%;
+         }
+          .col-md-2{
+              flex:0 0 auto;
+             width:16.66%;
+         }
+          .col-md-3{
+              flex:0 0 auto;
+             width:25%;
+         }
+          .col-md-4{
+              flex:0 0 auto;
+             width:33.33%;
+         }
+          .col-md-5{
+              flex:0 0 auto;
+             width:41.66%;
+         }
+          .col-md-6{
+              flex:0 0 auto;
+             width:50%;
+         }
+          .col-md-7{
+              flex:0 0 auto;
+             width:58.33%;
+         }
+          .col-md-8{
+              flex:0 0 auto;
+             width:66.66%;
+         }
+          .col-md-9{
+              flex:0 0 auto;
+             width:75%;
+         }
+          .col-md-10{
+              flex:0 0 auto;
+             width:83.33%;
+         }
+          .col-md-11{
+              flex:0 0 auto;
+             width:91.66%;
+         }
+          .col-md-12{
+              flex:0 0 auto;
+             width:100%;
+         }
+          .d-md-none{
+              display:none !important;
+          }	
+          .pad{
+            color:grey;
+          }
+          .productcontent img{
+            width:95% !important;
+        }
+        .productcontent2 h1{
+            color:blue;
+            padding: 20px  0;
+            font-size: 24px;
+        }  
+        .productcontent2 .h6 {
+            font-size: 18px;
+        }
+        .product-card{
+            font-size: 26px;
+        }
+        .cardflex{
+            padding: 35px 0;
+        }
+          
+        }
+
+        @media (min-width:1200px){
+            .container{
+                width:1170px;
+            }
+             .col-lg-1{
+                 flex:0 0 auto;
+               width:8.33%;
+           }
+            .col-lg-2{
+                flex:0 0 auto;
+               width:16.66%;
+           }
+            .col-lg-3{
+                flex:0 0 auto;
+               width:25%;
+           }
+            .col-lg-4{
+                flex:0 0 auto;
+               width:33.33%;
+           }
+            .col-lg-5{
+                flex:0 0 auto;
+               width:41.66%;
+           }
+            .col-lg-6{
+                flex:0 0 auto;
+               width:50%;
+           }
+            .col-lg-7{
+                flex:0 0 auto;
+               width:58.33%;
+           }
+            .col-lg-8{
+                flex:0 0 auto;
+               width:66.66%;
+           }
+            .col-lg-9{
+                flex:0 0 auto;
+               width:75%;
+           }
+            .col-lg-10{
+                flex:0 0 auto;
+               width:83.33%;
+           }
+            .col-lg-11{
+                flex:0 0 auto;
+               width:91.66%;
+           }
+            .col-lg-12{
+                flex:0 0 auto;
+               width:100%;
+           }
+           .d-lg-block{
+               display:block !important;
+           }
+           .d-lg-none{
+               display:none !important;
+           }
+        }

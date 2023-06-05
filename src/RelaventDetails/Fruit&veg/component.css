@@ -1,0 +1,251 @@
+.fruitcontainer{
+    width:100%;
+    margin:0 auto;
+    padding: 15px 0;
+}
+.fruitrow{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.fruitcard{
+    padding: 28px 5px;
+
+}
+.fruitcol1{
+    width:20%;
+    transition: 0.3s;
+    padding:10px 10px;
+}
+.cardflex {
+    padding: 5px 0;
+}
+.fruitcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fruitcol3{
+    width: 25%;
+}
+.fruitcol2{
+    width:80%;
+}
+.css-1xez8po-MuiPaper-root-MuiCard-root {
+    position: relative ;
+}
+.fruitfoot{
+    text-align: center;
+    font-size: 30px;
+    color:red;
+}
+.map1{
+    color:grey;
+}
+.cardfoot h6{
+ width:100%;
+}
+.cardfoot div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width:576px){
+    .col-xs-1{
+        flex:0 0 auto;
+        width:8.33%;
+     }
+      .col-xs-2{
+          flex:0 0 auto;
+         width:16.66%;
+     }
+      .col-xs-3{
+          flex:0 0 auto;
+         width:25%;
+     }
+      .col-xs-4{
+          flex:0 0 auto;
+         width:33.33%;
+     }
+      .col-xs-5{
+          flex:0 0 auto;
+         width:41.66%;
+     }
+      .col-xs-6{
+          flex:0 0 auto;
+         width:50%;
+     }
+      .col-xs-7{
+          flex:0 0 auto;
+         width:58.33%;
+     }
+      .col-xs-8{
+          flex:0 0 auto;
+         width:66.66%;
+     }
+      .col-xs-9{
+          flex:0 0 auto;
+         width:75%;
+     }
+      .col-xs-10{
+          flex:0 0 auto;
+         width:83.33%;
+     }
+      .col-xs-11{
+          flex:0 0 auto;
+         width:91.66%;
+     }
+      .col-xs-12{
+          flex:0 0 auto;
+         width:100%;
+     }
+     .d-xs-none{
+          display:none !important;
+      }	
+      .d-xs-block{
+        display: block !important;
+      }
+      .css-1xez8po-MuiPaper-root-MuiCard-root{
+        display: flex !important;
+      }
+      .css-o69gx8-MuiCardMedia-root {
+        width:100% !important;
+      }
+      .offer{
+     width: 25%;
+    font-size: 9px;
+    border-radius: 10px;
+      }
+    .contents h6,h5{
+       margin: 10px 0;
+    }
+  .shadows{
+    background-color: #fff;
+  }
+  .fruitcard{
+    padding: 20px 5px;
+
+}
+.footicon{
+    background-color: #e95f62;
+    color:#fff;
+    padding: 10px 25px;
+    margin-top: 25px;
+}
+      
+}
+
+@media (min-width:768px){
+    .col-md-1{
+        flex:0 0 auto;
+        width:8.33%;
+     }
+      .col-md-2{
+          flex:0 0 auto;
+         width:16.66%;
+     }
+      .col-md-3{
+          flex:0 0 auto;
+         width:25%;
+     }
+      .col-md-4{
+          flex:0 0 auto;
+         width:33.33%;
+     }
+      .col-md-5{
+          flex:0 0 auto;
+         width:41.66%;
+     }
+      .col-md-6{
+          flex:0 0 auto;
+         width:50%;
+     }
+      .col-md-7{
+          flex:0 0 auto;
+         width:58.33%;
+     }
+      .col-md-8{
+          flex:0 0 auto;
+         width:66.66%;
+     }
+      .col-md-9{
+          flex:0 0 auto;
+         width:75%;
+     }
+      .col-md-10{
+          flex:0 0 auto;
+         width:83.33%;
+     }
+      .col-md-11{
+          flex:0 0 auto;
+         width:91.66%;
+     }
+      .col-md-12{
+          flex:0 0 auto;
+         width:100%;
+     }
+      .d-md-none{
+          display:none !important;
+      }	
+      
+    }
+
+    @media (min-width:1200px){
+        .container{
+            width:1170px;
+        }
+         .col-lg-1{
+             flex:0 0 auto;
+           width:8.33%;
+       }
+        .col-lg-2{
+            flex:0 0 auto;
+           width:16.66%;
+       }
+        .col-lg-3{
+            flex:0 0 auto;
+           width:25%;
+       }
+        .col-lg-4{
+            flex:0 0 auto;
+           width:33.33%;
+       }
+        .col-lg-5{
+            flex:0 0 auto;
+           width:41.66%;
+       }
+        .col-lg-6{
+            flex:0 0 auto;
+           width:50%;
+       }
+        .col-lg-7{
+            flex:0 0 auto;
+           width:58.33%;
+       }
+        .col-lg-8{
+            flex:0 0 auto;
+           width:66.66%;
+       }
+        .col-lg-9{
+            flex:0 0 auto;
+           width:75%;
+       }
+        .col-lg-10{
+            flex:0 0 auto;
+           width:83.33%;
+       }
+        .col-lg-11{
+            flex:0 0 auto;
+           width:91.66%;
+       }
+        .col-lg-12{
+            flex:0 0 auto;
+           width:100%;
+       }
+       .d-lg-block{
+           display:block !important;
+       }
+       .d-lg-none{
+           display:none !important;
+       }
+    }
